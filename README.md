@@ -1,6 +1,6 @@
-# Gamocosm Minecraft Favours
+# Gamocosm Minecraft Flavours
 Official setup scripts used by Gamocosm for different flavours of Minecraft servers.
-After creating a script here, add a corresponding entry to Gamocosm.
+Read this [wiki page][1] for instructions on adding support for new flavours.
 
 ## Conventions
 - the Minecraft folder is `/home/mcuser/minecraft/`
@@ -10,3 +10,5 @@ After creating a script here, add a corresponding entry to Gamocosm.
 - be idempotent (as best as possible)
 - cleanup any intermediate files and folders
 - Gamocosm will recursively `chown` the Minecraft folder (for `mcuser`)
+
+[1]: https://github.com/Gamocosm/Gamocosm/wiki/Installing-different-versions-of-Minecraft
