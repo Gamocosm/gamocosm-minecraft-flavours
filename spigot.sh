@@ -5,7 +5,6 @@ set -e
 URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 SPIGOT_INSTALLER="BuildTools.jar"
 SPIGOT_JAR="BuildTools/spigot-1.8.jar"
-MINECRAFT_DIR="/home/mcuser/minecraft"
 
 rm -rf BuildTools
 mkdir BuildTools

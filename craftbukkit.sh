@@ -5,7 +5,6 @@ set -e
 URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 CRAFTBUKKIT_INSTALLER="BuildTools.jar"
 CRAFTBUKKIT_JAR="BuildTools/craftbukkit-1.8.jar"
-MINECRAFT_DIR="/home/mcuser/minecraft"
 
 rm -rf BuildTools
 mkdir BuildTools
