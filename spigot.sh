@@ -6,13 +6,20 @@ URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifac
 SPIGOT_INSTALLER="BuildTools.jar"
 SPIGOT_JAR="BuildTools/spigot-1.8.jar"
 
-rm -rf BuildTools
+WD="$(pwd)"
+cd /tmp
+rm -rf spigot
+mkdir spigot
+cd spigot
 mkdir BuildTools
-pushd BuildTools
+cd BuildTools
 wget -O "$SPIGOT_INSTALLER" "$URL"
 java -jar "$SPIGOT_INSTALLER"
-popd
+cd ..
 mv "$SPIGOT_JAR" minecraft_server-run.jar
 echo "eula=true" > eula.txt
 echo "enable-query=true" > server.properties
 rm -rf BuildTools
+cp -r . "$WD/" 
+cd ..
+rm -rf spigot
