@@ -8,7 +8,6 @@ AGRARIANSKIES_PACK="agrarianskies.zip"
 AGRARIANSKIES_MAP="HomeMP.zip"
 AGRARIANSKIES_JAR="FTBServer-1.6.4-965.jar"
 
-#I could use rm -rf * here but since this script is ran as root it would not be good if this script somehow gets ran somewhere it shouldn't.
 WD="$(pwd)"
 cd /tmp
 rm -rf agrarianskies
