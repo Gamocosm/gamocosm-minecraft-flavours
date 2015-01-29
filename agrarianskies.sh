@@ -9,15 +9,20 @@ AGRARIANSKIES_MAP="HomeMP.zip"
 AGRARIANSKIES_JAR="FTBServer-1.6.4-965.jar"
 
 #I could use rm -rf * here but since this script is ran as root it would not be good if this script somehow gets ran somewhere it shouldn't.
-rm -rf /home/mcuser/minecraft/*
-
+WD="$(pwd)"
+cd /tmp
+rm -rf agrarianskies
+mkdir agrarianskies
+cd agrarianskies
 wget -O "$AGRARIANSKIES_PACK" "$URL"
 wget -O "$AGRARIANSKIES_MAP" "$AGRARIANSKIES_MAPURL"
 unzip "$AGRARIANSKIES_PACK"
 unzip "$AGRARIANSKIES_MAP"
-
+mv HomeMP world
 mv "$AGRARIANSKIES_JAR" minecraft_server-run.jar
 echo "enable-query=true" > server.properties
-echo "level-name=HomeMP" >> server.properties
 rm -rf "$AGRARIANSKIES_PACK"
 rm -rf "$AGRARIANSKIES_MAP"
+cp -r . "$WD/" 
+cd ..
+rm -rf agrarianskies
