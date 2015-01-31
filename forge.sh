@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: Raekye
+# server: Minecraft Forge
+# project developers: Minecraft Forge team
+# project website: http://minecraftforge.net
 
 set -e
 

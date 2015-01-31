@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: MarMed
+# modpack: Crash Landing
+# modpack developers: Iskandar, others
+# modpack website: http://forum.feed-the-beast.com/threads/46277/
 
 set -e
 

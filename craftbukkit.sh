@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: MarMed
+# server: CraftBukkit
+# project developers: Spigot and CraftBukkit team
+# project website: http://spigotmc.org
 
 set -e
 

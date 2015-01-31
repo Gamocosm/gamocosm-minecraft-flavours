@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: MarMed
+# modpack: FTB Resurrection
+# modpack developers: FTB team
+# modpack website: http://www.feed-the-beast.com
 
 set -e
 
@@ -18,6 +22,6 @@ mv "$FTBRESURRECTION_SH" minecraft_server-run.sh
 echo "enable-query=true" > server.properties
 echo "eula=true" > eula.txt
 rm -rf "$FTBRESURRECTION_PACK"
-cp -r . "$WD/" 
+cp -r . "$WD/"
 cd ..
 rm -rf ftbresurrection

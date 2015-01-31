@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: MarMed
+# server: Spigot
+# project developers: Spigot team
+# project website: http://spigotmc.org
 
 set -e
 

@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: Raekye
+# server: Vanilla
+# server developers: Mojang
+# server website: https://minecraft.net
 
 set -e
 

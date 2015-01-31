@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: MarMed
+# modpack: Agrarian Skies
+# modpack developer: Jadedcat
+# modpack website: http://forum.feed-the-beast.com/threads/41906/
 
 set -e
 

@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: Raekye
+# server: MCServer
+# project developers: MCServer team
+# project website: http://mc-server.org
 
 set -e
 

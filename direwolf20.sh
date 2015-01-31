@@ -1,4 +1,8 @@
 #!/bin/bash
+# script author: MarMed
+# modpack: direwolf20
+# modpack developers: FTB team
+# modpack website: http://www.feed-the-beast.com
 
 set -e
 
