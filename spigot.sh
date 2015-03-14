@@ -18,7 +18,8 @@ cd spigot
 mkdir BuildTools
 cd BuildTools
 wget -O "$SPIGOT_INSTALLER" "$URL"
-java -jar "$SPIGOT_INSTALLER"
+echo "Running $SPIGOT_INSTALLER - log in $(pwd)/buildtools.log"
+java -jar "$SPIGOT_INSTALLER" > buildtools.log 2>&1
 cd ..
 mv "$SPIGOT_JAR" minecraft_server-run.jar
 echo "eula=true" > eula.txt

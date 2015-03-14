@@ -1,7 +1,7 @@
 #!/bin/bash
 # script author: MarMed
 # modpack: Test Pack Please Ignore
-# modpack developers: TPPI Dev Team
+# modpack developers: TPPI team
 # modpack website: http://www.reddit.com/r/TestPackPleaseIgnore/
 
 set -e
@@ -9,7 +9,6 @@ set -e
 URL="http://england1.creeperrepo.net/FTB2/modpacks%5ETPPI%5E1_1_2%5ETPPIServer.zip"
 TPPI_PACK="TPPI.zip"
 TPPI_SH="ServerStart.sh"
-
 
 WD="$(pwd)"
 cd /tmp

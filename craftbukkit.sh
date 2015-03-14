@@ -18,7 +18,8 @@ cd craftbukkit
 mkdir BuildTools
 cd BuildTools
 wget -O "$CRAFTBUKKIT_INSTALLER" "$URL"
-java -jar "$CRAFTBUKKIT_INSTALLER"
+echo "Running $CRAFTBUKKIT_INSTALLER - log in $(pwd)/buildtools.log"
+java -jar "$CRAFTBUKKIT_INSTALLER" > buildtools.log 2>&1
 cd ..
 mv "$CRAFTBUKKIT_JAR" minecraft_server-run.jar
 echo "eula=true" > eula.txt
