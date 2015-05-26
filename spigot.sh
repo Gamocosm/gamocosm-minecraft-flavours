@@ -8,7 +8,7 @@ set -e
 
 URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 SPIGOT_INSTALLER="BuildTools.jar"
-SPIGOT_JAR="BuildTools/spigot-1.8.3.jar"
+SPIGOT_JAR="BuildTools/spigot-1.8.6.jar"
 
 WD="$(pwd)"
 cd /tmp
