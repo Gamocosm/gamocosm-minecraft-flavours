@@ -9,7 +9,7 @@ set -e
 URL="http://jenkins.b303.me/job/TrueCraft/lastSuccessfulBuild/artifact/TrueCraft.zip"
 TRUECRAFT_ARCHIVE="TrueCraft.zip"
 
-dnf -y mono-core
+sudo dnf -y install mono-core
 
 WD="$(pwd)"
 cd /tmp
