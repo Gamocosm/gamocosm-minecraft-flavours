@@ -6,7 +6,6 @@
 
 set -e
 
-VANILLA_VERSION="1.8.1" # legacy
 VANILLA_VERSION="$MINECRAFT_FLAVOUR_VERSION"
 URL="https://s3.amazonaws.com/Minecraft.Download/versions/$VANILLA_VERSION/minecraft_server.$VANILLA_VERSION.jar"
 
