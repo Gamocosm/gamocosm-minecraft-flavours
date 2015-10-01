@@ -7,7 +7,7 @@
 set -e
 
 URL="http://truecraft.io/builds/TrueCraft-latest.zip"
-TRUECRAFT_ARCHIVE="TrueCraft.zip"
+TRUECRAFT_ARCHIVE="TrueCraft-latest.zip"
 
 sudo dnf -y install mono-core
 
