@@ -6,7 +6,7 @@
 
 set -e
 
-URL="http://jenkins.b303.me/job/TrueCraft/lastSuccessfulBuild/artifact/TrueCraft.zip"
+URL="http://truecraft.io/builds/TrueCraft-latest.zip"
 TRUECRAFT_ARCHIVE="TrueCraft.zip"
 
 sudo dnf -y install mono-core
