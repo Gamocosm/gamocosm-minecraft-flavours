@@ -6,9 +6,10 @@
 
 set -e
 
+SPIGOT_VERSION="$MINECRAFT_FLAVOUR_VERSION"
 URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar"
 SPIGOT_INSTALLER="BuildTools.jar"
-SPIGOT_JAR="BuildTools/spigot-1.8.8.jar"
+SPIGOT_JAR="BuildTools/spigot-$SPIGOT_VERSION.jar"
 
 WD="$(pwd)"
 cd /tmp
@@ -19,7 +20,7 @@ mkdir BuildTools
 cd BuildTools
 wget -O "$SPIGOT_INSTALLER" "$URL"
 echo "Running $SPIGOT_INSTALLER - log in $(pwd)/buildtools.log"
-java -jar "$SPIGOT_INSTALLER" > buildtools.log 2>&1
+java -jar "$SPIGOT_INSTALLER" --rev "$SPIGOT_VERSION" > buildtools.log 2>&1
 cd ..
 mv "$SPIGOT_JAR" minecraft_server-run.jar
 echo "eula=true" > eula.txt
