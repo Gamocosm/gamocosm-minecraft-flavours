@@ -6,9 +6,6 @@
 
 set -e
 
-VANILLA_VERSION="$MINECRAFT_FLAVOUR_VERSION"
-
-# MANIFEST="https://launchermeta.mojang.com/mc/game/version_manifest.json"
 URL="https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.32.1.zip"
 
 rm -rf bedrock-server-1.14.32.1.zip
