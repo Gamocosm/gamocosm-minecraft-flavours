@@ -6,7 +6,7 @@
 
 set -e
 
-URL="http://builds.cuberite.org/job/Cuberite%20Linux%20x64%20Master/lastSuccessfulBuild/artifact/Cuberite.tar.gz"
+URL="https://download.cuberite.org/linux-x86_64/Cuberite.tar.gz"
 
 rm -rf cuberite.tar.gz
 wget -O cuberite.tar.gz "$URL"
