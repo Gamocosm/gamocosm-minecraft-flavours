@@ -20,3 +20,7 @@ firewall-cmd --add-port=19132/udp
 firewall-cmd --add-port=19132/udp --permanent
 firewall-cmd --add-port=19133/udp
 firewall-cmd --add-port=19133/udp --permanent
+firewall-cmd --add-port=40005/udp
+firewall-cmd --add-port=40005/udp --permanent
+firewall-cmd --add-port=42324/udp
+firewall-cmd --add-port=42324/udp --permanent
