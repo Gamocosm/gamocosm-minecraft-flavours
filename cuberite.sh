@@ -14,7 +14,7 @@ tar --strip-components=1 -zxf cuberite.tar.gz
 rm -rf cuberite.tar.gz
 
 echo '#!/bin/sh' > minecraft_server-run.sh
-echo "./Cuberite" >> minecraft_server-run.sh
+echo "exec ./Cuberite" >> minecraft_server-run.sh
 chmod u+x minecraft_server-run.sh
 
 firewall-cmd --add-port=8080/tcp
