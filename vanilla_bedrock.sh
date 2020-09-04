@@ -6,12 +6,12 @@
 
 set -e
 
-URL="https://minecraft.azureedge.net/bin-linux/bedrock-server-1.14.32.1.zip"
+BEDROCK_VERSION="$MINECRAFT_FLAVOUR_VERSION"
+URL="https://minecraft.azureedge.net/bin-linux/bedrock-server-$BEDROCK_VERSION.zip"
 
-rm -rf bedrock-server-1.14.32.1.zip
-wget -O bedrock-server-1.14.32.1.zip "$URL"
-unzip bedrock-server-1.14.32.1.zip
-rm -rf bedrock-server-1.14.32.1.zip
+wget -O bedrock-server.zip "$URL"
+unzip bedrock-server.zip
+rm -rf bedrock-server.zip
 
 echo '#!/bin/sh' > minecraft_server-run.sh
 echo "LD_LIBRARY_PATH=. ./bedrock_server" >> minecraft_server-run.sh
