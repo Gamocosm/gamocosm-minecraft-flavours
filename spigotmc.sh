@@ -11,6 +11,8 @@ URL="https://hub.spigotmc.org/jenkins/job/BuildTools/lastSuccessfulBuild/artifac
 SPIGOT_INSTALLER="BuildTools.jar"
 SPIGOT_JAR="BuildTools/spigot-$SPIGOT_VERSION.jar"
 
+dnf -y install java-latest-openjdk-headless
+
 WD="$(pwd)"
 cd /tmp
 rm -rf spigot

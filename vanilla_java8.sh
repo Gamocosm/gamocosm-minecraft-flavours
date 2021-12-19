@@ -10,7 +10,7 @@ VANILLA_VERSION="$MINECRAFT_FLAVOUR_VERSION"
 
 URL="$(python3 "$(dirname $0)/vanilla_url.py" "$VANILLA_VERSION")"
 
-dnf -y install java-latest-openjdk-headless
+dnf -y install java-1.8.0-openjdk-headless
 
 rm -f minecraft_server-run.jar
 curl -o minecraft_server-run.jar "$URL"

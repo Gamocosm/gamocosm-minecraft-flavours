@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # script author: Raekye
 # server: MCServer
 # project developers: Cuberite team

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # script author: Raekye
 # server: Minecraft Forge 1.13+
 # project developers: Minecraft Forge team
@@ -11,8 +11,10 @@ FORGE_INSTALLER="forge-$FORGE_VERSION-installer.jar"
 FORGE_SERVER="forge-$FORGE_VERSION.jar"
 URL="http://files.minecraftforge.net/maven/net/minecraftforge/forge/$FORGE_VERSION/$FORGE_INSTALLER"
 
+dnf -y install java-1.8.0-openjdk-headless
+
 rm -f "$FORGE_INSTALLER"
-wget -O "$FORGE_INSTALLER" "$URL"
+curl -o "$FORGE_INSTALLER" "$URL"
 java -jar "$FORGE_INSTALLER" --installServer
 mv "$FORGE_SERVER" minecraft_server-run.jar
 echo "eula=true" > eula.txt

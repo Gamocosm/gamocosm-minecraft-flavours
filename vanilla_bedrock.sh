@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # script author: ZeroCharistmas
 # server: Vanilla Bedrock
 # server developers: Mojang
@@ -9,7 +9,7 @@ set -e
 BEDROCK_VERSION="$MINECRAFT_FLAVOUR_VERSION"
 URL="https://minecraft.azureedge.net/bin-linux/bedrock-server-$BEDROCK_VERSION.zip"
 
-wget -O bedrock-server.zip "$URL"
+curl -o bedrock-server.zip "$URL"
 unzip bedrock-server.zip
 rm -rf bedrock-server.zip
 
