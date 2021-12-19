@@ -11,5 +11,5 @@ URL="https://bamboo.gserv.me/artifact/GSPP-SRV/shared/build-latestSuccessful/Ver
 dnf -y install java-latest-openjdk-headless
 
 rm -rf glowstone.jar
-wget -O glowstone.jar "$URL"
+curl -Lo glowstone.jar "$URL"
 mv glowstone.jar minecraft_server-run.jar

@@ -20,7 +20,7 @@ mkdir spigot
 cd spigot
 mkdir BuildTools
 cd BuildTools
-wget -O "$SPIGOT_INSTALLER" "$URL"
+curl -Lo "$SPIGOT_INSTALLER" "$URL"
 echo "Running $SPIGOT_INSTALLER - log in $(pwd)/buildtools.log"
 java -jar "$SPIGOT_INSTALLER" --rev "$SPIGOT_VERSION" > buildtools.log 2>&1
 cd ..

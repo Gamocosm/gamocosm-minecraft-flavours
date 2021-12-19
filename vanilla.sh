@@ -13,6 +13,6 @@ URL="$(python3 "$(dirname $0)/vanilla_url.py" "$VANILLA_VERSION")"
 dnf -y install java-latest-openjdk-headless
 
 rm -f minecraft_server-run.jar
-curl -o minecraft_server-run.jar "$URL"
+curl -Lo minecraft_server-run.jar "$URL"
 echo "eula=true" > eula.txt
 echo "enable-query=true" > server.properties

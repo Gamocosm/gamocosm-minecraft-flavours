@@ -15,6 +15,6 @@ Read this [wiki page][1] for instructions on adding support for new flavours.
 - don't delete/modify anything else you don't have to
 - cleanup any intermediate files and folders
 - look at the existing scripts for examples/templates
-- download files with `curl -o <output file> <url>` (`wget` is nolonger installed by default)
+- download files with `curl -Lo <output file> <url>` (`wget` is nolonger installed by default)
 
 [1]: https://github.com/Gamocosm/Gamocosm/wiki/Installing-different-versions-of-Minecraft

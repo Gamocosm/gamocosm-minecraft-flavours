@@ -9,7 +9,7 @@ set -e
 URL="https://download.cuberite.org/linux-x86_64/Cuberite.tar.gz"
 
 rm -rf cuberite.tar.gz
-wget -O cuberite.tar.gz "$URL"
+curl -Lo cuberite.tar.gz "$URL"
 tar --strip-components=1 -zxf cuberite.tar.gz
 rm -rf cuberite.tar.gz
 

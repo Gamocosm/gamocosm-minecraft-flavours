@@ -9,7 +9,7 @@ set -e
 BEDROCK_VERSION="$MINECRAFT_FLAVOUR_VERSION"
 URL="https://minecraft.azureedge.net/bin-linux/bedrock-server-$BEDROCK_VERSION.zip"
 
-curl -o bedrock-server.zip "$URL"
+curl -Lo bedrock-server.zip "$URL"
 unzip bedrock-server.zip
 rm -rf bedrock-server.zip
 

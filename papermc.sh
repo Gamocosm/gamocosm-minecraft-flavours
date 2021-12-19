@@ -12,6 +12,6 @@ URL="https://papermc.io/api/v1/paper/$PAPER_VERSION/latest/download"
 dnf -y install java-latest-openjdk-headless
 
 rm -rf minecraft_server-run.jar
-wget -O minecraft_server-run.jar "$URL"
+curl -Lo minecraft_server-run.jar "$URL"
 echo "eula=true" > eula.txt
 echo "enable-query=true" > server.properties

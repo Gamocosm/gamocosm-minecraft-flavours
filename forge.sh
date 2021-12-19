@@ -14,7 +14,7 @@ URL="http://files.minecraftforge.net/maven/net/minecraftforge/forge/$FORGE_VERSI
 dnf -y install java-latest-openjdk-headless
 
 rm -f "$FORGE_INSTALLER"
-curl -o "$FORGE_INSTALLER" "$URL"
+curl -Lo "$FORGE_INSTALLER" "$URL"
 java -jar "$FORGE_INSTALLER" --installServer
 mv "$FORGE_SERVER" minecraft_server-run.jar
 echo "eula=true" > eula.txt
